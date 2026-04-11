@@ -44,23 +44,23 @@ This confirms that access is being designed through reusable security groups rat
 
 ---
 
-### 2) Department Share Group Example
-![Department Share Group Example](screenshots/02-department-share-group.png)
+### 2) Department Share Group Membership
+![Department Share Group Membership](screenshots/02-department-share-group-members.png)
 
-This screenshot shows the properties of a department-based share group, such as `HR_Share_RW` or `Finance_Share_RW`.
+This screenshot shows the membership of a department-based share group, such as `Finance_Share_RW`.
 
 **Why it matters:**  
-This demonstrates how department resource access is being structured around group-based assignment, which is cleaner and more scalable than user-by-user permission management.
+This demonstrates how department resource access is being assigned through group membership, which is cleaner and more scalable than user-by-user permission management.
 
 ---
 
-### 3) Role-Based Group Example
-![Role Based Group Example](screenshots/03-role-based-group.png)
+### 3) Role-Based Group Membership
+![Role Based Group Membership](screenshots/03-role-based-group-members.png)
 
-This screenshot shows the properties of a role-based group, such as `IT_Admins` or `IT_Helpdesk`.
+This screenshot shows the membership of a role-based group, such as `IT_Admins`.
 
 **Why it matters:**  
-This shows that the environment separates role-based administration from department share access, which supports stronger access control design.
+This shows that administrative and support access is being assigned through dedicated role groups rather than being mixed directly with department resource access.
 
 ---
 
