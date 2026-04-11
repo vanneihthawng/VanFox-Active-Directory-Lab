@@ -21,49 +21,49 @@ DC01 was configured to host Active Directory Domain Services and DNS, forming th
 - **Core Roles:** Active Directory Domain Services, DNS
 - **Domain Name:** `vanfox.local`
 
-These elements are part of the defined lab design for the project. :contentReference[oaicite:2]{index=2}
+These elements align with the planned VanFox lab design. :contentReference[oaicite:0]{index=0}
 
 ---
 
 ## Evidence
 
-### 1) DC01 Local Server View
-![DC01 Local Server](screenshots/01-dc01-local-server.png)
+### 1) DC01 System Name and Domain Membership
+![DC01 System Name](screenshots/01-dc01-system-name.png)
 
-This screenshot shows the Windows Server system after initial configuration and renaming to DC01.
+This screenshot shows the Server Manager **Local Server** view for DC01, including the configured hostname and domain membership.
 
 **Why it matters:**  
-This confirms that the server identity was configured correctly before promotion, which is an essential part of clean domain deployment.
+This confirms that the server is correctly identified as DC01 and is associated with the `vanfox.local` domain environment.
 
 ---
 
 ### 2) AD DS and DNS Role Installation
 ![AD DS and DNS Installed](screenshots/02-adds-dns-installed.png)
 
-This screenshot shows the installation of the required server roles, specifically Active Directory Domain Services and DNS Server.
+This screenshot shows that the required server roles, **Active Directory Domain Services** and **DNS Server**, are installed on DC01.
 
 **Why it matters:**  
-This proves that DC01 was prepared to function as both a Domain Controller and the domain’s DNS service provider.
+These roles are required for domain controller functionality, enabling centralized directory services and name resolution within the domain.
 
 ---
 
-### 3) Domain Promotion to vanfox.local
-![Domain Promotion](screenshots/03-domain-promotion.png)
+### 3) vanfox.local Domain in Active Directory Users and Computers
+![vanfox.local Domain](screenshots/03-vanfox-local-domain.png)
 
-This screenshot shows the promotion workflow or the completed promotion result for the new forest using the domain name `vanfox.local`.
+This screenshot shows **Active Directory Users and Computers** with the `vanfox.local` domain visible in the directory tree.
 
 **Why it matters:**  
-This is the core evidence that the domain was actually created and that the server moved from standalone configuration into domain infrastructure.
+This is the core evidence that the domain was successfully created and that Active Directory is functioning in the environment.
 
 ---
 
-### 4) Post-Promotion Validation
-![Post Promotion Validation](screenshots/04-post-promotion-validation.png)
+### 4) Post-Promotion ADUC Validation
+![Post Promotion ADUC Validation](screenshots/04-post-promotion-aduc.png)
 
-This screenshot should show a post-promotion view such as Server Manager, AD Users and Computers, or another management console confirming DC01 is operating as a Domain Controller.
+This screenshot shows a broader post-promotion view in **Active Directory Users and Computers**, confirming that DC01 is operating as a domain controller and that the domain structure is available for administration.
 
 **Why it matters:**  
-This validates that promotion completed successfully and that directory services are active.
+This validates that promotion completed successfully and that directory services are active and manageable.
 
 ---
 
