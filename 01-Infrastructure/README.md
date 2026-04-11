@@ -37,6 +37,7 @@ This screenshot shows the full virtual machine list created for the VanFox lab. 
 
 **Why it matters:**  
 This confirms the project is structured as a multi-system environment, which is much closer to a real business network than a single standalone server lab. Additionally, this documents that the Domain Controller was intentionally provisioned as infrastructure, not simply created with default settings. It helps show planning, system allocation, and environment preparation.
+
 ---
 
 ### 2) Lab Topology or Network View
