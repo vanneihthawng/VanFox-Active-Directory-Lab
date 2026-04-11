@@ -33,24 +33,13 @@ This aligns with the initial lab design defined for the VanFox environment. :con
 ### 1) Virtual Machine Inventory
 ![Virtual Machine Inventory](screenshots/01-vm-list.png)
 
-This screenshot shows the full virtual machine list created for the VanFox lab. It should display the main systems used in the project, including DC01, FS01, and the Windows 11 clients.
+This screenshot shows the full virtual machine list created for the VanFox lab. It should display the main systems used in the project, including DC01, FS01, and the Windows 11 clients. It also includes the VM configuration for DC01, including resource allocation such as memory, CPU, storage, and network attachment.
 
 **Why it matters:**  
-This confirms the project is structured as a multi-system environment, which is much closer to a real business network than a single standalone server lab.
-
+This confirms the project is structured as a multi-system environment, which is much closer to a real business network than a single standalone server lab. Additionally, this documents that the Domain Controller was intentionally provisioned as infrastructure, not simply created with default settings. It helps show planning, system allocation, and environment preparation.
 ---
 
-### 2) DC01 Virtual Machine Configuration
-![DC01 VM Settings](screenshots/02-dc01-vm-settings.png)
-
-This screenshot shows the VM configuration for DC01, including resource allocation such as memory, CPU, storage, and network attachment.
-
-**Why it matters:**  
-This documents that the Domain Controller was intentionally provisioned as infrastructure, not simply created with default settings. It helps show planning, system allocation, and environment preparation.
-
----
-
-### 3) Lab Topology or Network View
+### 2) Lab Topology or Network View
 ![Lab Topology](screenshots/03-lab-topology.png)
 
 This screenshot or diagram shows how the systems are intended to relate to one another inside the VirtualBox lab environment.
