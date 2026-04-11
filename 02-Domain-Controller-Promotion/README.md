@@ -55,16 +55,6 @@ This is the core evidence that the domain was successfully created and that Acti
 
 ---
 
-### 4) Post-Promotion ADUC Validation
-![Post Promotion ADUC Validation](screenshots/04-post-promotion-aduc.png)
-
-This screenshot shows a broader post-promotion view in **Active Directory Users and Computers**, including the `vanfox.local` domain, the VanFox Organizational Unit structure, and managed objects within the directory.
-
-**Why it matters:**  
-This validates that domain promotion completed successfully and that Active Directory is active, accessible, and ready for ongoing administration.
-
----
-
 ## Technical Takeaways
 This phase demonstrates:
 - Windows Server role deployment
