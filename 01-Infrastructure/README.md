@@ -31,7 +31,7 @@ This aligns with the initial lab design defined for the VanFox environment. :con
 ## Evidence
 
 ### 1) Virtual Machine Inventory
-![Virtual Machine Inventory](screenshots/01-vm-inventory.png)
+![Virtual Machine Inventory](screenshots/01-vm-list.png)
 
 This screenshot shows the full virtual machine list created for the VanFox lab. It should display the main systems used in the project, including DC01, FS01, and the Windows 11 clients.
 
