@@ -41,7 +41,7 @@ This confirms the project is structured as a multi-system environment, which is 
 ---
 
 ### 2) Lab Topology or Network View
-![Lab Topology](screenshots/03-lab-topology.png)
+![Lab Topology](screenshots/02-lab-architecture-diagram.png)
 
 This screenshot or diagram shows how the systems are intended to relate to one another inside the VirtualBox lab environment.
 
