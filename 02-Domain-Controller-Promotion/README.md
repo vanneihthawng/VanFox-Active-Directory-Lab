@@ -21,8 +21,6 @@ DC01 was configured to host Active Directory Domain Services and DNS, forming th
 - **Core Roles:** Active Directory Domain Services, DNS
 - **Domain Name:** `vanfox.local`
 
-These elements align with the planned VanFox lab design. :contentReference[oaicite:0]{index=0}
-
 ---
 
 ## Evidence
@@ -33,7 +31,7 @@ These elements align with the planned VanFox lab design. :contentReference[oaici
 This screenshot shows the Server Manager **Local Server** view for DC01, including the configured hostname and domain membership.
 
 **Why it matters:**  
-This confirms that the server is correctly identified as DC01 and is associated with the `vanfox.local` domain environment.
+This confirms that the server is correctly identified as DC01 and associated with the `vanfox.local` domain environment.
 
 ---
 
@@ -43,7 +41,7 @@ This confirms that the server is correctly identified as DC01 and is associated 
 This screenshot shows that the required server roles, **Active Directory Domain Services** and **DNS Server**, are installed on DC01.
 
 **Why it matters:**  
-These roles are required for domain controller functionality, enabling centralized directory services and name resolution within the domain.
+These roles are required for domain controller functionality, enabling centralized directory services and domain-based name resolution.
 
 ---
 
@@ -53,17 +51,17 @@ These roles are required for domain controller functionality, enabling centraliz
 This screenshot shows **Active Directory Users and Computers** with the `vanfox.local` domain visible in the directory tree.
 
 **Why it matters:**  
-This is the core evidence that the domain was successfully created and that Active Directory is functioning in the environment.
+This is the core evidence that the domain was successfully created and that Active Directory is functioning within the environment.
 
 ---
 
 ### 4) Post-Promotion ADUC Validation
 ![Post Promotion ADUC Validation](screenshots/04-post-promotion-aduc.png)
 
-This screenshot shows a broader post-promotion view in **Active Directory Users and Computers**, confirming that DC01 is operating as a domain controller and that the domain structure is available for administration.
+This screenshot shows a broader post-promotion view in **Active Directory Users and Computers**, including the `vanfox.local` domain, the VanFox Organizational Unit structure, and managed objects within the directory.
 
 **Why it matters:**  
-This validates that promotion completed successfully and that directory services are active and manageable.
+This validates that domain promotion completed successfully and that Active Directory is active, accessible, and ready for ongoing administration.
 
 ---
 
@@ -78,4 +76,4 @@ This phase demonstrates:
 ---
 
 ## Phase Outcome
-DC01 was established as the primary Domain Controller for the VanFox environment, providing the domain foundation needed for structured identity and administrative management throughout the rest of the project.
+DC01 was successfully established as the primary Domain Controller for the VanFox environment, providing the domain foundation needed for structured identity, access, and administrative management throughout the rest of the project.
