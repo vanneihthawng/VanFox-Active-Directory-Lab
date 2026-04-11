@@ -1,21 +1,21 @@
 # 04 - Security Groups
 
 ## Overview
-This section documents the security group model created within the VanFox domain.
+This section documents the security group structure created within the VanFox domain.
 
-The group structure was designed to separate department-based resource access from role-based administrative functions. This approach supports cleaner permission management, stronger access control design, and easier administration as the lab expands into file shares, printers, USB policy exceptions, and local admin delegation.
+The group design separates department-based resource access from role-based administrative functions. This supports cleaner permission assignment, stronger access-control planning, and easier administration as the environment expands into file shares, printers, USB restrictions, and delegated support roles.
 
 ---
 
 ## Objectives
 - Create department-based groups for shared resource access
-- Create role-based groups for administrative or operational control
+- Create role-based groups for administrative and operational control
 - Prepare the environment for future file permissions and policy targeting
-- Separate resource access groups from privileged role groups
+- Separate resource access groups from privileged or support-related groups
 
 ---
 
-## Security Group Design
+## Security Group Structure
 
 ### Department Share Groups
 - `HR_Share_RW`
@@ -30,51 +30,49 @@ The group structure was designed to separate department-based resource access fr
 - `USB_Allowed`
 - `Printer_Users`
 
-These groups are defined in the lab plan and were created under the administrative structure of the domain. :contentReference[oaicite:4]{index=4}
-
 ---
 
 ## Evidence
 
-### 1) Group Inventory in Administrative Container
-![Security Group Inventory](screenshots/01-security-group-inventory.png)
+### 1) Security Group Inventory
+![Security Group Inventory](screenshots/01-security-groups-overview.png)
 
-This screenshot shows the created groups inside the administrative area of the domain, including both department share groups and role-based groups.
+This screenshot shows the security groups created in the administrative area of the domain, including both department-based share groups and role-based groups.
 
 **Why it matters:**  
-This confirms that the access model is being built through reusable groups rather than direct object-by-object permissions.
+This confirms that access is being designed through reusable security groups rather than being assigned directly to individual users.
 
 ---
 
 ### 2) Department Share Group Example
-![Department Share Group Properties](screenshots/02-department-share-group-properties.png)
+![Department Share Group Example](screenshots/02-department-share-group.png)
 
-This screenshot shows the properties of one department-based share group, such as `HR_Share_RW` or `Finance_Share_RW`.
+This screenshot shows the properties of a department-based share group, such as `HR_Share_RW` or `Finance_Share_RW`.
 
 **Why it matters:**  
-This demonstrates the use of security groups as part of a structured access model for department resources.
+This demonstrates how department resource access is being structured around group-based assignment, which is cleaner and more scalable than user-by-user permission management.
 
 ---
 
 ### 3) Role-Based Group Example
-![Role Based Group Properties](screenshots/03-role-group-properties.png)
+![Role Based Group Example](screenshots/03-role-based-group.png)
 
-This screenshot shows a role-based group such as `IT_Admins` or `IT_Helpdesk`.
+This screenshot shows the properties of a role-based group, such as `IT_Admins` or `IT_Helpdesk`.
 
 **Why it matters:**  
-This provides evidence that the lab separates administrative roles from department resource access, which is an important design principle in business environments.
+This shows that the environment separates role-based administration from department share access, which supports stronger access control design.
 
 ---
 
 ## Technical Takeaways
 This phase demonstrates:
 - Security group planning
-- Resource access modeling
-- Role-based access control thinking
-- Separation of privilege and resource assignment
-- Preparation for scalable permission management
+- Group-based access design
+- Separation of resource access and role assignment
+- Preparation for role-based access control
+- Scalable permission management practices
 
 ---
 
 ## Phase Outcome
-The VanFox environment now includes a structured security group model that supports future share permissions, administrative access control, and policy-linked role assignment.
+The VanFox environment now includes a structured security group model that supports future share permissions, delegated administration, and policy-linked access control.
