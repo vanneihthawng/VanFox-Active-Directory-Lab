@@ -52,7 +52,6 @@ This screenshot shows **Active Directory Users and Computers** with the `vanfox.
 
 **Why it matters:**  
 This is the core evidence that the domain was successfully created and that Active Directory is functioning within the environment.
-This is the core evidence that the domain was successfully created and that Active Directory is functioning within the environment.
 
 ---
 
