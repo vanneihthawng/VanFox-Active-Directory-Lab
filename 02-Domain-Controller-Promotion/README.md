@@ -53,6 +53,17 @@ This screenshot shows **Active Directory Users and Computers** with the `vanfox.
 **Why it matters:**  
 This is the core evidence that the domain was successfully created and that Active Directory is functioning within the environment.
 
+### 4) DNS Forward Lookup Zone
+![DNS Forward Lookup Zone](screenshots/04-dns-forward-lookup-zone.png)
+
+This screenshot shows the Active Directory-integrated `vanfox.local` DNS zone. It includes the required SOA and name-server records, along with host records for DC01 and FS01.
+
+- **DC01:** `10.0.2.15`
+- **FS01:** `10.0.2.20`
+
+**Why it matters:**  
+This confirms that DNS is functioning for the domain and that domain systems have registered host records. Reliable DNS resolution is required for domain authentication, computer joins, Group Policy processing, and access to network resources.
+
 ---
 
 ## Technical Takeaways
