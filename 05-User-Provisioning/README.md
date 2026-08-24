@@ -49,7 +49,7 @@ This provides evidence that the account was provisioned as a managed Active Dire
 ---
 
 ### 3) Sample User Group Membership
-![Sample User Group Membership](screenshots/03-sample-user-memberof-updated.png)
+![Sample User Group Membership](screenshots/03-sample-user-memberof.png)
 
 This screenshot shows the **Member Of** tab for a sample user account.
 
