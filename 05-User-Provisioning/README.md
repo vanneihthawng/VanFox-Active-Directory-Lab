@@ -39,7 +39,7 @@ This confirms that user objects were placed into the correct business-aligned OU
 ---
 
 ### 2) Sample User Properties
-![Sample User Properties](screenshots/02-sample-user-properties.png)
+![Sample User Properties](screenshots/02-sample-user-org.png)
 
 This screenshot shows the properties of a sample user account after creation.
 
@@ -49,7 +49,7 @@ This provides evidence that the account was provisioned as a managed Active Dire
 ---
 
 ### 3) Sample User Group Membership
-![Sample User Group Membership](screenshots/03-sample-user-memberof.png)
+![Sample User Group Membership](screenshots/03-sample-user-memberof-updated.png)
 
 This screenshot shows the **Member Of** tab for a sample user account.
 
