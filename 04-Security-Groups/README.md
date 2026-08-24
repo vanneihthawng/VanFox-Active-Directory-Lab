@@ -1,34 +1,40 @@
 # 04 - Security Groups
 
 ## Overview
-This section documents the security group structure created within the VanFox domain.
+This section documents the security group structure implemented within the `vanfox.local` domain.
 
-The group design separates department-based resource access from role-based administrative functions. This supports cleaner permission assignment, stronger access-control planning, and easier administration as the environment expands into file shares, printers, USB restrictions, and delegated support roles.
+The groups are centrally organized inside `VanFox\_Admin\Groups` and configured as Global Security groups. The design separates department resource access, administrative roles, operational access, and Group Policy targeting.
 
 ---
 
 ## Objectives
-- Create department-based groups for shared resource access
-- Create role-based groups for administrative and operational control
-- Prepare the environment for future file permissions and policy targeting
-- Separate resource access groups from privileged or support-related groups
+- Centralize security groups in a dedicated OU
+- Create department-based groups for shared-folder access
+- Create groups for administrative and support roles
+- Create policy-targeting groups for Group Policy deployment
+- Assign access through group membership instead of directly to individual users
 
 ---
 
 ## Security Group Structure
 
-### Department Share Groups
+### Department Resource Groups
 - `HR_Share_RW`
 - `Finance_Share_RW`
 - `Operations_Share_RW`
 - `Warehouse_Share_RW`
 - `Public_Share_R`
 
-### Role-Based Groups
+The department groups provide read/write access to their corresponding departmental resources. `Public_Share_R` provides read-only access to the shared public resource.
+
+### Role and Policy Groups
 - `IT_Admins`
 - `IT_Helpdesk`
+- `Folder_Redirection_Users`
 - `USB_Allowed`
 - `Printer_Users`
+
+`Folder_Redirection_Users` will control which users receive the Folder Redirection Group Policy.
 
 ---
 
@@ -37,42 +43,44 @@ The group design separates department-based resource access from role-based admi
 ### 1) Security Group Inventory
 ![Security Group Inventory](screenshots/01-security-groups-overview-updated.png)
 
-This screenshot shows the security groups created in the administrative area of the domain, including both department-based share groups and role-based groups.
+This screenshot shows the centralized `VanFox\_Admin\Groups` OU and all Global Security groups created for resource access, administrative roles, operational access, and policy targeting.
 
 **Why it matters:**  
-This confirms that access is being designed through reusable security groups rather than being assigned directly to individual users.
+This confirms that access is managed through reusable security groups instead of assigning permissions directly to individual users.
 
 ---
 
 ### 2) Department Share Group Membership
 ![Department Share Group Membership](screenshots/02-department-share-group-members.png)
 
-This screenshot shows the membership of a department-based share group, such as `Finance_Share_RW`.
+This screenshot shows the members of `Finance_Share_RW`, with Finance department users assigned to the appropriate resource-access group.
 
 **Why it matters:**  
-This demonstrates how department resource access is being assigned through group membership, which is cleaner and more scalable than user-by-user permission management.
+Department permissions can be managed by changing group membership without modifying file permissions for each individual user.
 
 ---
 
 ### 3) Role-Based Group Membership
-![Role Based Group Membership](screenshots/03-role-based-group-members.png)
+![Role-Based Group Membership](screenshots/03-role-based-group-members.png)
 
-This screenshot shows the membership of a role-based group, such as `IT_Admins`.
+This screenshot shows the membership of `IT_Admins`, demonstrating how administrative access is separated from department resource access.
 
 **Why it matters:**  
-This shows that administrative and support access is being assigned through dedicated role groups rather than being mixed directly with department resource access.
+Dedicated role groups support controlled administrative access and clearer separation of responsibilities.
 
 ---
 
 ## Technical Takeaways
 This phase demonstrates:
-- Security group planning
-- Group-based access design
-- Separation of resource access and role assignment
-- Preparation for role-based access control
-- Scalable permission management practices
+
+- Global Security group administration
+- Group-based permission management
+- Separation of resource access and administrative roles
+- Group Policy security filtering preparation
+- Role-based access control principles
+- Scalable identity and access management
 
 ---
 
 ## Phase Outcome
-The VanFox environment now includes a structured security group model that supports future share permissions, delegated administration, and policy-linked access control.
+The VanFox environment now contains a centralized security group structure supporting departmental file access, administrative roles, printer and USB access, and future Folder Redirection policy targeting.
