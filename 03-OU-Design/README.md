@@ -1,25 +1,27 @@
 # 03 - OU Design
 
 ## Overview
-This section documents the Organizational Unit structure created inside the VanFox domain.
+This section documents the Organizational Unit structure implemented inside the `vanfox.local` domain.
 
-The OU design was built to reflect a business-oriented directory layout with separate containers for administration, departments, and computer objects. This structure prepares the environment for cleaner administration, future Group Policy targeting, and scalable directory management.
+The directory was organized around administrative, departmental, security-group, and computer-management requirements. This structure supports cleaner object administration, controlled Group Policy targeting, and future expansion of the VanFox environment.
 
 ---
 
 ## Objectives
 - Create a root OU for the VanFox organization
-- Separate department user objects into dedicated OUs
-- Separate computer objects into their own administrative structure
-- Prepare the directory for organized administration and future policy application
+- Separate user accounts by business department
+- Centralize security groups inside a dedicated administrative OU
+- Separate computer objects by department
+- Prepare the directory for Group Policy targeting and scalable administration
 
 ---
 
 ## OU Structure
-The VanFox directory structure includes:
+The implemented directory structure includes:
 
 - `VanFox`
   - `_Admin`
+    - `Groups`
   - `IT`
   - `HR`
   - `Finance`
@@ -32,6 +34,8 @@ The VanFox directory structure includes:
     - `Operations-PCs`
     - `Warehouse-PCs`
 
+The `_Admin\Groups` OU provides a centralized location for security groups while keeping them separate from departmental user accounts.
+
 ---
 
 ## Evidence
@@ -39,32 +43,40 @@ The VanFox directory structure includes:
 ### 1) Root OU Structure
 ![Root OU Structure](screenshots/01-root-ous-structure.png)
 
-This screenshot shows the top-level `VanFox` Organizational Unit and the main administrative, departmental, and computer-related containers created beneath it.
+This screenshot shows the top-level `VanFox` OU, departmental OUs, the computer-management structure, and the dedicated `_Admin\Groups` administrative container.
 
 **Why it matters:**  
-This confirms that the environment was structured intentionally instead of relying on a flat or default directory layout.
+This confirms that the directory uses an intentional business-aligned structure instead of relying on the default Active Directory containers or a flat directory layout.
 
 ---
 
 ### 2) Computer OU Structure
 ![Computer OU Structure](screenshots/02-computer-ou-structure.png)
 
-This screenshot shows the `Computers` OU and its child OUs for department-specific workstations, such as IT-PCs, HR-PCs, Finance-PCs, Operations-PCs, and Warehouse-PCs.
+This screenshot shows the `Computers` OU and its child OUs for department-specific workstations:
+
+- `IT-PCs`
+- `HR-PCs`
+- `Finance-PCs`
+- `Operations-PCs`
+- `Warehouse-PCs`
 
 **Why it matters:**  
-This demonstrates forward planning for endpoint management, department-based computer placement, and future Group Policy application.
+Department-specific computer OUs support organized device placement, targeted Group Policy application, and easier endpoint administration.
 
 ---
 
 ## Technical Takeaways
 This phase demonstrates:
+
 - Logical Active Directory design
 - Department-based directory organization
-- Separation of user and computer administration
+- Separation of users, groups, and computer objects
+- Centralized security-group administration
 - Policy-ready OU hierarchy
-- Business-aligned environment structuring
+- Scalable enterprise-style directory planning
 
 ---
 
 ## Phase Outcome
-The VanFox domain was organized into a structured OU hierarchy that supports scalable administration and prepares the environment for later user management, computer placement, and Group Policy deployment.
+The VanFox domain was organized into a structured OU hierarchy that supports scalable administration, departmental user management, centralized security groups, computer placement, and future Group Policy deployment.
