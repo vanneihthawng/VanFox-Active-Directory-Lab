@@ -35,7 +35,7 @@ The group design separates department-based resource access from role-based admi
 ## Evidence
 
 ### 1) Security Group Inventory
-![Security Group Inventory](screenshots/01-security-groups-overview.png)
+![Security Group Inventory](screenshots/01-security-groups-overview-updated.png)
 
 This screenshot shows the security groups created in the administrative area of the domain, including both department-based share groups and role-based groups.
 
