@@ -37,7 +37,7 @@ The VanFox directory structure includes:
 ## Evidence
 
 ### 1) Root OU Structure
-![Root OU Structure](screenshots/01-root-ou-structure.png)
+![Root OU Structure](screenshots/01-root-ous-structure.png)
 
 This screenshot shows the top-level `VanFox` Organizational Unit and the main administrative, departmental, and computer-related containers created beneath it.
 
