@@ -39,7 +39,7 @@ This confirms the project is structured as a multi-system environment, which is 
 ---
 
 ### 2) Implemented Lab Architecture
-![Implemented Lab Architecture](screenshots/02-lab-architecture-diagram.png)
+![Implemented Lab Architecture](screenshots/02-lab-architecture-diagram-updated.png)
 This diagram shows the intended architecture of the VanFox Active Directory lab, including the relationship between the Domain Controller, File Server, and Windows 11 client systems within the VirtualBox internal network.
 
 **Why it matters:**  
