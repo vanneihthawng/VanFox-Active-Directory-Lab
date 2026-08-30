@@ -94,19 +94,19 @@ The `VC-Map-Drives` GPO uses Group Policy Preferences and item-level targeting t
 
 ### Department Drive
 
-The following example shows the Warehouse department drive:
+The following example shows the Finance department drive:
 
 | Setting | Configuration |
 |---|---|
 | Drive letter | `S:` |
-| UNC path | `\\FS01\Warehouse` |
-| Label | Warehouse Department |
+| UNC path | `\\FS01\Finance` |
+| Label | Finance Department |
 | Reconnect | Enabled |
-| Target group | `Warehouse_Share_RW` |
+| Target group | `Finance_Share_RW` |
 
-Only users who belong to the required Warehouse security group receive this drive mapping.
+Only users who belong to the required Finance security group receive this drive mapping.
 
-![Department drive mapping](screenshots/04a-department-drive-mapping.png)
+![Department drive mapping](screenshots/04a-finance-department-drive-mapping.png)
 
 ### Public Drive
 
