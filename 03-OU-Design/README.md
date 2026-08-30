@@ -79,4 +79,4 @@ This phase demonstrates:
 ---
 
 ## Phase Outcome
-The VanFox domain was organized into a structured OU hierarchy that supports scalable administration, departmental user management, centralized security groups, computer placement, and future Group Policy deployment.
+The VanFox domain was organized into a structured OU hierarchy that supports scalable administration, departmental user management, centralized security groups, computer placement, and the implemented Group Policy deployment.
