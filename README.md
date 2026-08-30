@@ -36,7 +36,7 @@ The environment includes 20 domain users across five departments, group-based ac
 
 ## Architecture
 
-![VanFox Active Directory lab architecture](./01-Infrastructure/screenshots/02-lab-architecture-diagram.png)
+![VanFox Active Directory lab architecture](./01-Infrastructure/screenshots/02-lab-architecture-diagram-updated.png)
 
 All four virtual machines operate on the isolated `VanFoxLab` network. DC01 provides AD DS, DNS, authentication, and Group Policy. FS01 provides file shares, redirected user data, software packages, and printing services.
 
