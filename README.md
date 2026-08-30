@@ -36,23 +36,9 @@ The environment includes 20 domain users across five departments, group-based ac
 
 ## Architecture
 
-```mermaid
-flowchart TD
-    DC["DC01 - AD DS and DNS"]
-    FS["FS01 - File and Print Services"]
-    W1["WIN11-01 - HR Client"]
-    W2["WIN11-02 - IT Client"]
+![VanFox Active Directory lab architecture](./01-Infrastructure/screenshots/02-lab-architecture-diagram.png)
 
-    DC -->|"Domain membership and DNS"| FS
-    DC -->|"Authentication and Group Policy"| W1
-    DC -->|"Authentication and Group Policy"| W2
-    FS -->|"Shares, user data, printer and software"| W1
-    FS -->|"Shares, user data, printer and software"| W2
-```
-
-All domain members use DC01 for internal DNS. FS01 provides SMB storage, redirected user data, software packages, and the shared printer.
-
-![VanFox virtual machine inventory](./01-Infrastructure/screenshots/01-vm-list.png)
+All four virtual machines operate on the isolated `VanFoxLab` network. DC01 provides AD DS, DNS, authentication, and Group Policy. FS01 provides file shares, redirected user data, software packages, and printing services.
 
 ---
 
