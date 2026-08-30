@@ -3,7 +3,7 @@
 ## Overview
 This section documents the foundational infrastructure for the VanFox Active Directory lab. The environment was designed in VirtualBox to simulate a small business Windows domain with separated server and client roles.
 
-The lab includes a dedicated Domain Controller, a planned File Server, and Windows 11 client systems to support identity management, access control, and endpoint administration. This phase focuses on environment structure, virtual machine planning, and the intended lab architecture.
+The lab includes a dedicated Domain Controller, a domain-joined File and Print Server, and two managed Windows 11 clients supporting identity management, access control, centralized user data, Group Policy, and endpoint administration.
 
 ---
 
