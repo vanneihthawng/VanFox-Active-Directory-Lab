@@ -254,11 +254,7 @@ The Group Policy design demonstrates several enterprise administration practices
 
 These screenshots document the administrative configuration of the VanFox Group Policy environment.
 
-End-user policy application and client-side results are documented separately in:
-
-```text
-11-Client-Join-and-Validation
-```
+End-user policy application and client-side results are documented in [11-Client-Join-and-Validation](../11-Client-Join-and-Validation/).
 
 ---
 
