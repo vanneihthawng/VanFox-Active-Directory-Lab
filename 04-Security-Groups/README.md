@@ -34,7 +34,7 @@ The department groups provide read/write access to their corresponding departmen
 - `USB_Allowed`
 - `Printer_Users`
 
-`Folder_Redirection_Users` will control which users receive the Folder Redirection Group Policy.
+`Folder_Redirection_Users` controls which users receive the Folder Redirection Group Policy.
 
 ---
 
@@ -83,4 +83,4 @@ This phase demonstrates:
 ---
 
 ## Phase Outcome
-The VanFox environment now contains a centralized security group structure supporting departmental file access, administrative roles, printer and USB access, and future Folder Redirection policy targeting.
+The VanFox environment contains a centralized security-group structure actively supporting departmental file access, administrative roles, printer deployment, USB exceptions, and Folder Redirection security filtering.
