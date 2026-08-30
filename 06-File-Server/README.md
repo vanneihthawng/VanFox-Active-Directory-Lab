@@ -1,4 +1,4 @@
-# VanFox File Server Deployment
+# File Server Deployment
 
 ## Overview
 
