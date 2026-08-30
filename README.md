@@ -204,7 +204,11 @@ Examples encountered during the build included:
 > Built and documented a four-VM Windows Server Active Directory lab with AD DS, DNS, organizational units, 20 user accounts, role-based security groups, domain-joined Windows 11 clients, secured department shares, private Home Folders, Documents Folder Redirection, PowerShell logon scripting, software and printer deployment, USB restrictions, and end-to-end Group Policy validation.
 
 ---
+## Build Guide
 
+[![View Build Guide](https://img.shields.io/badge/View_Build_Guide-PDF-172A3A?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./docs/VanFox-Active-Directory-Lab-Build-Guide.pdf)
+
+---
 ## Author
 
 **Van Neih Thawng**
