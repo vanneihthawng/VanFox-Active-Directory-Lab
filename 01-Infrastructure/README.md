@@ -20,7 +20,7 @@ The lab includes a dedicated Domain Controller, a domain-joined File and Print S
 - **Lab Type:** Internal Windows domain lab
 - **Primary Systems:**
   - **DC01** — Domain Controller + DNS
-  - **FS01** — Planned File Server + Print Server
+  - **FS01** — Domain-joined File Server + Print Server
   - **WIN11-01** — Windows 11 client
   - **WIN11-02** — Windows 11 client
 
@@ -38,10 +38,9 @@ This confirms the project is structured as a multi-system environment, which is 
 
 ---
 
-### 2) Planned Lab Architecture
-![Planned Lab Architecture](screenshots/02-lab-architecture-diagram.png)
+### 2) Implemented Lab Architecture
+![Implemented Lab Architecture](screenshots/02-lab-architecture-diagram.png)
 This diagram shows the intended architecture of the VanFox Active Directory lab, including the relationship between the Domain Controller, File Server, and Windows 11 client systems within the VirtualBox internal network.
-**Planning note:** This diagram records the original design baseline. It will be replaced after all project phases are complete to reflect the final IP addressing, domain-joined clients, file services, Group Policy, and enterprise user-data services.
 
 **Why it matters:**  
 This provides a high-level view of the project design and shows how the environment is being structured to simulate a small business Windows domain.
