@@ -3,7 +3,7 @@
 ## Overview
 This section documents the deployment and promotion of DC01 as the primary Domain Controller for the VanFox lab environment.
 
-DC01 was configured to host Active Directory Domain Services and DNS, forming the identity and name-resolution backbone of the domain. This phase establishes the centralized authentication infrastructure required for organizational units, security groups, user accounts, client joins, and future Group Policy deployment.
+DC01 was configured to host Active Directory Domain Services and DNS, forming the identity and name-resolution backbone of the domain. This phase establishes the centralized authentication infrastructure required for organizational units, security groups, user accounts, client joins, and Group Policy deployment.
 
 ---
 
